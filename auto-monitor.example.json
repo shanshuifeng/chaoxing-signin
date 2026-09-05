@@ -1,0 +1,10 @@
+{
+  "phone": "13700000000",
+  "password": "your-password",
+  "delay": 0.75,
+  "location": {
+    "lon": "115.938187",
+    "lat": "28.6839",
+    "address": "江西省南昌大学青山湖区北区软件学院软件楼"
+  }
+}

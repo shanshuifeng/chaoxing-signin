@@ -1,0 +1,124 @@
+/* [定制功能] 我的课程页面样式 —— 与项目现有拟物化(neumorphism)风格保持一致 */
+
+.mycourses-page {
+  padding: 90px 32px 48px;
+  text-align: center;
+  color: #4c5e6d;
+}
+
+.mycourses-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+.mycourses-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 14vh;
+}
+
+.mycourses-count {
+  margin-top: 0.5rem;
+  color: #7b8a97;
+}
+
+.mycourses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.mycourses-button {
+  height: 64px;
+  width: 180px;
+  border-radius: 13px;
+  background: #ecf0f3;
+  box-shadow: 8px 8px 16px #c9cccf, -8px -8px 16px #ffffff;
+  font-weight: 600;
+  color: #4c5e6d !important;
+  transition: 0.3s;
+}
+
+.mycourses-button:hover {
+  transform: scale(1.05);
+  background: #e9eef1;
+  transition: 0.3s;
+}
+
+.mycourses-button-text {
+  padding: 1rem;
+}
+
+/* 课程卡片 */
+.course-card {
+  width: 260px;
+  background: #ecf0f3;
+  border-radius: 13px;
+  box-shadow: 16px 16px 32px #c9cccf, -16px -16px 32px #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.course-card:hover {
+  transform: scale(1.03);
+  background: #e9eef1;
+  transition: 0.3s;
+}
+
+.course-cover {
+  position: relative;
+  height: 146px;
+  background: linear-gradient(135deg, #d7dee3 0%, #eef2f5 100%);
+  overflow: hidden;
+}
+
+.course-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.course-cover-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #8aa0b2;
+  user-select: none;
+}
+
+.course-cover-hidden {
+  display: none;
+}
+
+.course-info {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.course-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #37474f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.course-meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: #7b8a97;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

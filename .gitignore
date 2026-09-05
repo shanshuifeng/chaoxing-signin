@@ -1,0 +1,20 @@
+# ===== 敏感信息（严禁提交）=====
+# 自动监听运行配置（含学习通账号密码）
+auto-monitor.json
+# 证书与私钥（可按 docs/DEPLOYMENT.md 重新生成）
+certs/
+
+# ===== 依赖与构建产物 =====
+node_modules/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# ===== 临时与本地文件 =====
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.env
+.env.*

@@ -1,0 +1,14 @@
+services:
+  chaoxing-signin:
+    build: ./src          # 使用定制源码构建（含自动监听 + 拍照提醒 + 我的课程）
+    image: chaoxing-signin:custom
+    container_name: chaoxing-signin
+    restart: unless-stopped
+    ports:
+      - "9000:80"     # HTTP  (http://localhost:9000)
+      - "9443:443"    # HTTPS (推荐使用 https://localhost:9443)
+      - "5000:5000"   # 后端接口（仅调试用，页面已改为同源 /api）
+    volumes:
+      - ./auto-monitor.json:/app/auto-monitor.json:ro   # 自动监听配置（账号/延时/定位）
+      - ./certs/localhost.crt:/etc/nginx/certs/localhost.crt:ro   # TLS 证书
+      - ./certs/localhost.key:/etc/nginx/certs/localhost.key:ro
