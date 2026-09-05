@@ -22,9 +22,9 @@
   "password": "your-password",
   "delay": 0.75,
   "location": {
-    "lon": "115.938187",
-    "lat": "28.6839",
-    "address": "江西省南昌大学青山湖区北区软件学院软件楼"
+    "lon": "113.000000",
+    "lat": "28.0000",
+    "address": "XX省XX市XX大学XX校区XX教学楼（示例，请替换为自己的位置）"
   }
 }
 ```
